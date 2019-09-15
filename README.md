@@ -21,9 +21,9 @@ You need Kivy and Buildozer. You must be on Linux for Android build to work.
 python3 -m pip install kivy buildozer
 ```
 
-## Build
+## Build, install, and run
 
-Use buildozer to create Android APKs
+Use buildozer to create Android APKs, deploy, and run.
 
 ```bash
 # Build
@@ -32,8 +32,9 @@ python3 -m buildozer android debug
 python3 -m buildozer android debug deploy
 # Build, install, and run
 python3 -m buildozer android debug deploy run
+# Build, install, and run with log output
+python3 -m buildozer android debug deploy run logcat
 ```
-
 
 ## Get the IP address of the device
 
