@@ -23,7 +23,7 @@ class MyApp(App):
         @self.flask_app.route('/')
         def index():
             self.log_text.insert_text('Request: %s %s\n' % (request.remote_addr, request.path))
-            return '<html><body>Ok</body></html>\n'
+            return '<html><body>It works</body></html>\n'
 
         self.flask_app.run(host=self.host, port=self.port)
 
